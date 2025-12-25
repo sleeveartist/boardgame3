@@ -58,6 +58,8 @@ export default function Rules() {
                     </div>
                 ))}
             </div>
+            <button onClick={() => navigate("/admin")}>Admin</button>
         </div>
     )
+
 }
