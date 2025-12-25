@@ -1,11 +1,14 @@
 import eightwords from "./assets/tasks/eightwords";
 import { useState, useEffect } from "react";
 import "./index.css"
+import { useNavigate, Link } from "react-router-dom"
+
 
 function Eightwords() {
     const [wordsArray, setWordsArray] = useState([])
     const [isActive, setIsActive] = useState(false)
     const [count, setCount] = useState(0)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const getRandomWords = () => {
